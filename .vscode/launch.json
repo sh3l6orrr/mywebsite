@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Run",
+            "program": "${workspaceFolder:mycreate_backend}/.build/debug/Run",
+            "args": [],
+            "cwd": "${workspaceFolder:mycreate_backend}",
+            "preLaunchTask": "swift: Build Debug Run"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release Run",
+            "program": "${workspaceFolder:mycreate_backend}/.build/release/Run",
+            "args": [],
+            "cwd": "${workspaceFolder:mycreate_backend}",
+            "preLaunchTask": "swift: Build Release Run"
+        }
+    ]
+}
